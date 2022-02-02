@@ -19,6 +19,11 @@ const AnimationIndex = ({navigation}) => {
               style={se.itemBox}>
               <Text style={se.itemText}>Fading</Text>
             </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Moving')}
+              style={se.itemBox}>
+              <Text style={se.itemText}>Moving</Text>
+            </TouchableOpacity>
           </View>
         </View>
       }
