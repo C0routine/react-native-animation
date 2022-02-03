@@ -1,2 +1,10 @@
 https://www.josephk.io/see-reanimated-strength-for-yourself/
 https://medium.com/react-native-seoul/%EC%9B%90%EB%A6%AC%EC%99%80-%EC%98%88%EC%A0%9C%EB%A5%BC-%ED%86%B5%ED%95%B4-react-native-reanimated-v2-%EC%9E%85%EB%AC%B8%ED%95%98%EA%B8%B0-336e832f6ed6
+
+Reanimated2 를 사용하는 이유 
+- 기존 react-native Animated API 를 사용할 경우 UI Thread & JS Thread 간의 비동기 통신에 의존하기에 
+결과를 계속해서 보장할수가 없음(Animation Performence 하락)
+- 이를 해결하기 위하여 Reanimated 는 Animation 을 UI Thread 단에서 실행하게함. 
+(UI Thread 와 JS Thread 각각에서 실행되는것이기에 Animation Performence 에 영향이 없음)
+- 
+

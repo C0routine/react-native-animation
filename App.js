@@ -5,7 +5,8 @@ import AnimationIndex from './src/AnimationIndex';
 import AnimationFading from './src/AnimationFading';
 import AnimationMoving from './src/AnimationMoving';
 import AnimationPanResponder from './src/AnimationPanResponder';
-import Reanimated from './src/Reanimated';
+import ReanimatedBase from './src/ReanimatedBase';
+import ReactAnimatedPerformence from './src/ReactAnimatedPerformence';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -18,7 +19,8 @@ const App = () => {
         <Stack.Screen name="Fading" component={AnimationFading} />
         <Stack.Screen name="Moving" component={AnimationMoving} />
         <Stack.Screen name="AnimationPanResponder" component={AnimationPanResponder} />
-        <Stack.Screen name="Reanimated" component={Reanimated} />
+        <Stack.Screen name="ReactAnimatedPerformence" component={ReactAnimatedPerformence} />
+        <Stack.Screen name="ReanimatedBase" component={ReanimatedBase} />
       </Stack.Navigator>
     </NavigationContainer>
   );
