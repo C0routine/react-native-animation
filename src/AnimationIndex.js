@@ -1,7 +1,6 @@
 import React from 'react';
 import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {getStatusBarHeight} from 'react-native-status-bar-height';
-import GoBackView from './GoBackView';
 
 const AnimationIndex = ({navigation}) => {
   return (
@@ -12,20 +11,38 @@ const AnimationIndex = ({navigation}) => {
         <Text style={se.headerText}>Animation Learning</Text>
       }
       ListEmptyComponent={
-        <View style={{marginBottom: 30}}>
-          <View style={se.itemContainer}>
-            <TouchableOpacity
-              onPress={() => navigation.navigate('Fading')}
-              style={se.itemBox}>
-              <Text style={se.itemText}>Fading</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => navigation.navigate('Moving')}
-              style={se.itemBox}>
-              <Text style={se.itemText}>Moving</Text>
-            </TouchableOpacity>
+        <>
+          <View style={{marginBottom: 30}}>
+            <View style={se.itemContainer}>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('Fading')}
+                style={se.itemBox}>
+                <Text style={se.itemText}>Fading</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('Moving')}
+                style={se.itemBox}>
+                <Text style={se.itemText}>Moving</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('AnimationPanResponder')}
+                style={se.itemBox}>
+                <Text style={se.itemText}>PanResponder</Text>
+              </TouchableOpacity>
+            </View>
           </View>
-        </View>
+
+          <View style={{marginBottom: 30, alignItems: 'center'}}>
+            <Text style={se.headerText}>Reanimated2 Learning</Text>
+            <View style={[se.itemContainer, {marginTop:20}]}>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('Reanimated')}
+                style={se.itemBox}>
+                <Text style={se.itemText}>Reanimated2</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </>
       }
     />
   );
