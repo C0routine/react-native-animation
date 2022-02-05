@@ -43,9 +43,9 @@ const AnimationIndex = ({navigation}) => {
               <Text style={se.itemText}>Reanimated Base</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => navigation.navigate('ReanimatedPerformence')}
+              onPress={() => navigation.navigate('ReanimatedGesture')}
               style={se.itemBox}>
-              <Text style={se.itemText}>Reanimated Base</Text>
+              <Text style={se.itemText}>Reanimated Gesture</Text>
             </TouchableOpacity>
           </View>
         </>

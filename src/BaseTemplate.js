@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Text, Animated} from 'react-native';
+import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 import GoBackView from './GoBackView';
 
 const BaseTemplate = ({navigation}) => {

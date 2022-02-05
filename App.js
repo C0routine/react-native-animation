@@ -7,22 +7,33 @@ import AnimationMoving from './src/AnimationMoving';
 import AnimationPanResponder from './src/AnimationPanResponder';
 import ReanimatedBase from './src/ReanimatedBase';
 import ReactAnimatedPerformence from './src/ReactAnimatedPerformence';
+import ReanimatedGesture from './src/ReanimatedGesture';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{headerShown: false}}
-        initialRouteName="Animation">
-        <Stack.Screen name="Animation" component={AnimationIndex} />
-        <Stack.Screen name="Fading" component={AnimationFading} />
-        <Stack.Screen name="Moving" component={AnimationMoving} />
-        <Stack.Screen name="AnimationPanResponder" component={AnimationPanResponder} />
-        <Stack.Screen name="ReactAnimatedPerformence" component={ReactAnimatedPerformence} />
-        <Stack.Screen name="ReanimatedBase" component={ReanimatedBase} />
-      </Stack.Navigator>
-    </NavigationContainer>
+        <Stack.Navigator
+          screenOptions={{headerShown: false}}
+          initialRouteName="Animation">
+          <Stack.Screen name="Animation" component={AnimationIndex} />
+          <Stack.Screen name="Fading" component={AnimationFading} />
+          <Stack.Screen name="Moving" component={AnimationMoving} />
+          <Stack.Screen
+            name="AnimationPanResponder"
+            component={AnimationPanResponder}
+          />
+          <Stack.Screen
+            name="ReactAnimatedPerformence"
+            component={ReactAnimatedPerformence}
+          />
+          <Stack.Screen name="ReanimatedBase" component={ReanimatedBase} />
+          <Stack.Screen
+            name="ReanimatedGesture"
+            component={ReanimatedGesture}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
   );
 };
 
