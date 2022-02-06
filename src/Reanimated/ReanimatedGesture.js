@@ -17,7 +17,7 @@ import Animated, {
   useSharedValue,
   withSpring,
 } from 'react-native-reanimated';
-import GoBackView from './GoBackView';
+import GoBackView from '../GoBackView';
 
 const limitSize = Dimensions.get('window').width - 20;
 const ReanimatedGesture = ({navigation}) => {

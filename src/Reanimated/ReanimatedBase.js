@@ -13,7 +13,7 @@ import Animated, {
   withSpring,
   withTiming,
 } from 'react-native-reanimated';
-import GoBackView from './GoBackView';
+import GoBackView from '../GoBackView';
 
 const handleRotation = progress => {
   'worklet';

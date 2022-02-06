@@ -8,7 +8,7 @@ import {
   Easing,
   Animated,
 } from 'react-native';
-import GoBackView from './GoBackView';
+import GoBackView from '../GoBackView';
 
 const ReactAnimatedPerformence = ({navigation}) => {
   const [react, setReact] = useState(false);

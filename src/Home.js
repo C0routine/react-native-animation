@@ -2,7 +2,7 @@ import React from 'react';
 import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {getStatusBarHeight} from 'react-native-status-bar-height';
 
-const AnimationIndex = ({navigation}) => {
+const Home = ({navigation}) => {
   return (
     <FlatList
       style={se.all}
@@ -29,6 +29,7 @@ const AnimationIndex = ({navigation}) => {
               <Text style={se.itemText}>PanResponder</Text>
             </TouchableOpacity>
           </View>
+
           <View style={se.itemContainer}>
             <TouchableOpacity
               onPress={() => navigation.navigate('ReactAnimatedPerformence')}
@@ -36,6 +37,7 @@ const AnimationIndex = ({navigation}) => {
               <Text style={se.itemText}>ReactNative Animated API Performence</Text>
             </TouchableOpacity>
           </View>
+
           <View style={se.itemContainer}>
             <TouchableOpacity
               onPress={() => navigation.navigate('ReanimatedBase')}
@@ -48,13 +50,21 @@ const AnimationIndex = ({navigation}) => {
               <Text style={se.itemText}>Reanimated Gesture</Text>
             </TouchableOpacity>
           </View>
+
+          <View style={se.itemContainer}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('InterpolateScroll')}
+              style={se.itemBox}>
+              <Text style={se.itemText}>Interpolate ScrollView</Text>
+            </TouchableOpacity>
+          </View>
         </>
       }
     />
   );
 };
 
-export default AnimationIndex;
+export default Home;
 
 const se = StyleSheet.create({
   all: {flex: 1, paddingTop: getStatusBarHeight(), backgroundColor: 'white'},
