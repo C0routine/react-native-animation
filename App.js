@@ -9,6 +9,7 @@ import ReanimatedBase from './src/Reanimated/ReanimatedBase';
 import ReanimatedGesture from './src/Reanimated/ReanimatedGesture';
 import InterpolateScroll from './src/Reanimated/InterpolateScroll';
 import Home from './src/Home';
+import InterpolateTheme from './src/Reanimated/InterpolateTheme';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -31,6 +32,7 @@ const App = () => {
         <Stack.Screen name="ReanimatedBase" component={ReanimatedBase} />
         <Stack.Screen name="ReanimatedGesture" component={ReanimatedGesture} />
         <Stack.Screen name="InterpolateScroll" component={InterpolateScroll} />
+        <Stack.Screen name="InterpolateTheme" component={InterpolateTheme} />
       </Stack.Navigator>
     </NavigationContainer>
   );

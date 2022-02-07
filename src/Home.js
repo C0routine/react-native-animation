@@ -57,6 +57,11 @@ const Home = ({navigation}) => {
               style={se.itemBox}>
               <Text style={se.itemText}>Interpolate ScrollView</Text>
             </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('InterpolateTheme')}
+              style={se.itemBox}>
+              <Text style={se.itemText}>Interpolate Theme</Text>
+            </TouchableOpacity>
           </View>
         </>
       }
