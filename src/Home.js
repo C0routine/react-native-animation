@@ -63,6 +63,20 @@ const Home = ({navigation}) => {
               <Text style={se.itemText}>Interpolate Theme</Text>
             </TouchableOpacity>
           </View>
+
+
+          <View style={se.itemContainer}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('PinchGestureView')}
+              style={se.itemBox}>
+              <Text style={se.itemText}>PinchGestureHandler</Text>
+            </TouchableOpacity>
+            {/* <TouchableOpacity
+              onPress={() => navigation.navigate('InterpolateTheme')}
+              style={se.itemBox}>
+              <Text style={se.itemText}>Interpolate Theme</Text>
+            </TouchableOpacity> */}
+          </View>
         </>
       }
     />
