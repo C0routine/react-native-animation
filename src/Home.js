@@ -71,11 +71,11 @@ const Home = ({navigation}) => {
               style={se.itemBox}>
               <Text style={se.itemText}>PinchGestureHandler</Text>
             </TouchableOpacity>
-            {/* <TouchableOpacity
-              onPress={() => navigation.navigate('InterpolateTheme')}
+            <TouchableOpacity
+              onPress={() => navigation.navigate('CircleProgress')}
               style={se.itemBox}>
-              <Text style={se.itemText}>Interpolate Theme</Text>
-            </TouchableOpacity> */}
+              <Text style={se.itemText}>Circle Progress</Text>
+            </TouchableOpacity>
           </View>
         </>
       }

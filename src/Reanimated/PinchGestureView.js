@@ -12,7 +12,7 @@ import GoBackView from '../GoBackView';
 const AnimatedImage = Animated.createAnimatedComponent(Image);
 const {width, height} = Dimensions.get('window')
 
-const BaseTemplate = ({navigation}) => {
+const PinchGestureView = ({navigation}) => {
   const ImageUrl =
     'https://media.istockphoto.com/photos/astronaut-lying-in-the-meadow-picture-id1304263738';
 
@@ -70,7 +70,7 @@ const BaseTemplate = ({navigation}) => {
   );
 };
 
-export default BaseTemplate;
+export default PinchGestureView;
 
 const se = StyleSheet.create({
   all: {flex: 1, backgroundColor: 'white'},

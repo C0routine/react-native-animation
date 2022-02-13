@@ -13,6 +13,7 @@
   "dependencies": {
     "@react-navigation/native": "^6.0.7",
     "@react-navigation/native-stack": "^6.3.0",
+    "@shopify/react-native-skia": "https://github.com/Shopify/react-native-skia/releases/download/v0.1.103-alpha/shopify-react-native-skia-0.1.103.tgz",
     "react": "17.0.2",
     "react-native": "0.67.2",
     "react-native-fast-image": "^8.5.11",
@@ -20,7 +21,8 @@
     "react-native-reanimated": "^2.3.1",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.10.2",
-    "react-native-status-bar-height": "^2.6.0"
+    "react-native-status-bar-height": "^2.6.0",
+    "react-native-svg": "^12.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
