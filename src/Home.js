@@ -72,9 +72,9 @@ const Home = ({navigation}) => {
               <Text style={se.itemText}>PinchGestureHandler</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => navigation.navigate('CircleProgress')}
+              onPress={() => navigation.navigate('DoubleTapLike')}
               style={se.itemBox}>
-              <Text style={se.itemText}>Circle Progress</Text>
+              <Text style={se.itemText}>DoubleTapLike</Text>
             </TouchableOpacity>
           </View>
         </>
