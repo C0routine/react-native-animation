@@ -13,6 +13,8 @@ import InterpolateTheme from './src/Reanimated/InterpolateTheme';
 import PinchGestureView from './src/Reanimated/PinchGestureView';
 import CircleProgress from './src/Reanimated/CircleProgress';
 import DoubleTapLike from './src/Reanimated/DoubleTapLike';
+import PanGestureScroll from './src/Reanimated/PanGestureScroll';
+import ColorPicker from './src/Reanimated/ColorPicker';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -38,6 +40,8 @@ const App = () => {
         <Stack.Screen name="InterpolateTheme" component={InterpolateTheme} />
         <Stack.Screen name="PinchGestureView" component={PinchGestureView} />
         <Stack.Screen name="DoubleTapLike" component={DoubleTapLike} />
+        <Stack.Screen name="PanGestureScroll" component={PanGestureScroll} />
+        <Stack.Screen name="ColorPicker" component={ColorPicker} />
         <Stack.Screen name="CircleProgress" component={CircleProgress} />
       </Stack.Navigator>
     </NavigationContainer>

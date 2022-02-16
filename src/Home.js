@@ -64,7 +64,6 @@ const Home = ({navigation}) => {
             </TouchableOpacity>
           </View>
 
-
           <View style={se.itemContainer}>
             <TouchableOpacity
               onPress={() => navigation.navigate('PinchGestureView')}
@@ -75,6 +74,19 @@ const Home = ({navigation}) => {
               onPress={() => navigation.navigate('DoubleTapLike')}
               style={se.itemBox}>
               <Text style={se.itemText}>DoubleTapLike</Text>
+            </TouchableOpacity>
+          </View>
+
+          <View style={se.itemContainer}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('PanGestureScroll')}
+              style={se.itemBox}>
+              <Text style={se.itemText}>PanGestureScrollPage</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('ColorPicker')}
+              style={se.itemBox}>
+              <Text style={se.itemText}>ColorPicker</Text>
             </TouchableOpacity>
           </View>
         </>
